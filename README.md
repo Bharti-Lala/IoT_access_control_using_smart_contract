@@ -8,9 +8,18 @@ For simplicity, a decentralized application has been built on a private etherum 
 
 The front end API for interacting with the contract functions haev been written using node.js
 
-Tech Stack Use:
+# Tech Stack Use:
 1) Geth Ethereum Client ( for setting up the private ethereum contract)
 2) Solidity ( for writting the smart contract)
 3) Node.js
 4) Javascript
 5) HTML
+
+# Install all the deoendencies 
+1) geth
+2) node
+3) npm
+4) web3
+
+setup a private ethereum network with proof of work or proof of authority cansensus protocol - https://hackernoon.com/setup-your-own-private-proof-of-authority-ethereum-network-with-geth-9a0a3750cda8
+Compile the above smart contract in remix, and obtain the WEB3DEPLOY from output copy it in deploy.js and depoy it from geth  command line with loadScript("deploy.js") command , a contract address will be obtained upon sucess deployment and mining of the contract. Replace the contract address initialized in server.js with this new address.
